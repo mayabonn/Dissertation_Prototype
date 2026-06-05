@@ -1,16 +1,16 @@
 # Dissertation Prototype
 
-This repository contains the prototype developed for my dissertation project on Instagram hashtag-based engagement prediction in the Maltese context.
+This repository contains the prototype developed for my undergraduate dissertation project on Instagram hashtag-based engagement prediction in the Maltese context.
 
 ## Project Overview
 
-The prototype investigates how hashtag-based features can be used to analyse and predict Instagram engagement. The project focuses on hashtag characteristics such as hashtag quantity, hashtag categories, hashtag length, language use, and hashtag combinations.
+The prototype investigates how hashtag-related features can be used to analyse and predict Instagram engagement. It focuses on features such as hashtag quantity, hashtag category, hashtag length, Maltese hashtag ratio, hashtag combinations, caption length, emoji use, sentiment polarity, and engagement rate.
 
 The prototype includes:
 
-* Instagram data collection script
+* Instagram data collection
 * Hashtag extraction
-* Hashtag classification using Uses and Gratifications Theory (UGT)
+* Hashtag classification using Uses and Gratifications Theory
 * Feature engineering
 * Engagement rate calculation
 * Exploratory data analysis
@@ -20,47 +20,45 @@ The prototype includes:
 
 ## Files Included
 
-### `data_collection.py`
+### data_collection.py
 
-This script was used to collect Instagram post data using the Instagram Graph API. It collects post captions, likes, comments, timestamps, and follower counts for selected accounts.
+This script was used to collect Instagram post data using the Meta Instagram Graph API. It collects post captions, like counts, comment counts, timestamps, and follower counts for selected public accounts.
 
-Sensitive information such as access tokens and account IDs are not included in this repository.
+Sensitive information such as access tokens, account IDs, API credentials, and account lists are not included in this repository.
 
-### `final.ipynb`
+### Prototype.ipynb
 
-This notebook contains the main prototype implementation. It includes the full analysis pipeline, from loading the dataset to extracting hashtag features, training machine learning models, evaluating results, and producing the final output summary.
+This notebook contains the main prototype implementation. It presents the full analysis workflow used in the dissertation, including dataset loading, hashtag extraction, UGT-based hashtag classification, feature engineering, engagement rate calculation, exploratory analysis, model training, model evaluation, visualisation, and final result summaries.
 
 ## Main Features Analysed
 
-The prototype analyses the following hashtag-related features:
+The prototype analyses the following features:
 
 * Total number of hashtags per post
 * Average hashtag length
-* Hashtag language indicators
-* UGT hashtag categories:
-
-  * Informational
-  * Entertaining
-  * Relational
-  * Remunerative
+* Maltese hashtag ratio
+* Informational hashtag count
+* Entertaining hashtag count
+* Relational hashtag count
+* Remunerative hashtag count
 * Hashtag combinations
 * Caption length
 * Emoji count
-* Sentiment score
+* Sentiment polarity
 * Engagement rate
 
 ## Machine Learning Models Used
 
-The prototype compares the following models:
+The prototype compares the following machine learning models:
 
 * Logistic Regression
 * Random Forest
 * XGBoost
 
-The models are used to classify posts into high and low engagement groups based on the engagement rate.
+The models are used to classify Instagram posts into Low engagement and High engagement groups based on engagement rate.
 
 ## Notes
 
-The raw dataset and API credentials are not included for privacy and ethical reasons. The prototype notebook shows the full processing, analysis, modelling, and evaluation steps used in the dissertation.
+The raw dataset, API credentials, access tokens, account IDs, and account lists are not included in this repository for privacy, ethical, and security reasons. The notebook shows the processing, analysis, modelling, evaluation, visualisation, and hypothesis testing steps used in the dissertation prototype.
 
 This repository was submitted as part of the dissertation prototype requirement.
