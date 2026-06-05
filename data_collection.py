@@ -6,7 +6,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from datetime import datetime, timezone
 
-# ── Paths ─────────────────────────────────────────────────────
+# Paths
 BASE_DIR     = os.path.dirname(__file__)
 ROOT_DIR     = os.path.join(BASE_DIR, "..")
 ACCOUNTS_TXT = os.path.join(ROOT_DIR, "data", "accounts.txt")
@@ -43,7 +43,6 @@ def get_account_data(username):
     """
     Collects posts from the last 12 months for one account.
     Uses Business Discovery endpoint with pagination.
-    Usernames not displayed in output for ethical reasons.
     """
     url    = f"{BASE_URL}/{ACCOUNT_ID}"
     params = {
